@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='index.js') }}" defer></script>
+    <title>Title</title>
+</head>
+<body>
+    <p>The template is working</p>
+    <form action="/get_value" action="get">
+        <input placeholder="Enter your name" name="user_input" id="user_input" />
+        <button type="submit">Click me</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Textbooks</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Science Textbooks</h1>
+        
+        <div class="accordion" id="textbooksAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="biologyHeading">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#biologyCollapse" aria-expanded="true" aria-controls="biologyCollapse">
+                        Biology Textbook
+                    </button>
+                </h2>
+                <div id="biologyCollapse" class="accordion-collapse collapse show" aria-labelledby="biologyHeading" data-bs-parent="#textbooksAccordion">
+                    <div class="accordion-body">
+                        <img src="static/biology.jpg" alt="Biology Textbook" class="img-fluid">
+                        <p>Price: $25.00</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="chemistryHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chemistryCollapse" aria-expanded="false" aria-controls="chemistryCollapse">
+                        Chemistry Textbook
+                    </button>
+                </h2>
+                <div id="chemistryCollapse" class="accordion-collapse collapse" aria-labelledby="chemistryHeading" data-bs-parent="#textbooksAccordion">
+                    <div class="accordion-body">
+                        <img src="static/chemistry.jpg" alt="Chemistry Textbook" class="img-fluid">
+                        <p>Price: $30.00</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="physicsHeading">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#physicsCollapse" aria-expanded="false" aria-controls="physicsCollapse">
+                        Physics Textbook
+                    </button>
+                </h2>
+                <div id="physicsCollapse" class="accordion-collapse collapse" aria-labelledby="physicsHeading" data-bs-parent="#textbooksAccordion">
+                    <div class="accordion-body">
+                        <img src="static/physics.jpg" alt="Physics Textbook" class="img-fluid">
+                        <p>Price: $28.00</p>
+                        <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add more textbooks as needed -->
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
